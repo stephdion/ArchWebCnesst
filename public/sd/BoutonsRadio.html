@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Boutons radio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Boutons radio</h1>
+        <p class="requis sans-recul">
+            <span class="sr-only">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+        </p>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple de boutons radios disponibles</h2>
+                </div>
+                <div class="panel-body">
+                    <h3>Bouton radios sur une seule ligne</h3>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question requis jsRequis control-label">Choix requis sur la même ligne </legend>
+                            <div class="reponse radio">
+                                <div class="radio-inline">
+                                    <input id="R1A" name="R1" type="radio">
+                                    <label for="R1A">Option 1</label>
+                                </div>
+                                <div class="radio-inline">
+                                    <input id="R1B" name="R1" type="radio">
+                                    <label for="R1B">Option 2</label>
+                                </div>
+                                <div class="radio-inline">
+                                    <input id="R1C" name="R1" type="radio">
+                                    <label for="R1C">Option 3</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Distance adaptative entre les options</legend>
+                            <div class="reponse radio">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <input id="R2A" name="R2" type="radio">
+                                        <label for="R2A">Option 1</label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <input id="R2B" name="R2" type="radio">
+                                        <label for="R2B">Option 2</label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <input id="R2C" name="R2" type="radio">
+                                        <label for="R2C">Option 3</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <h3>Bouton radios sur plusieurs lignes</h3>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Choix sur plusieurs lignes</legend>
+                            <div class="reponse">
+                                <div class="row radio">
+                                    <input id="R3A" name="R3" type="radio">
+                                    <label for="R3A">Option 1</label>
+                                </div>
+                                <div class="row radio">
+                                    <input id="R3B" name="R3" type="radio">
+                                    <label for="R3B">Option 2</label>
+                                </div>
+                                <div class="row radio">
+                                    <input id="R3C" name="R3" type="radio">
+                                    <label for="R3C">Option 3</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form role="form" class="form-horizontal">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple de boutons radios non disponibles</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Choix sur la même ligne</legend>
+                            <div class="reponse radio">
+                                <div class="radio-inline">
+                                    <input id="R4A" name="R4" type="radio">
+                                    <label for="R4A">Actif</label>
+                                </div>
+                                <div class="radio-inline">
+                                    <input id="R4D" name="R4" type="radio">
+                                    <label for="R4D">Actif Aussi</label>
+                                </div>
+                                <div class="radio-inline">
+                                    <input id="R4B" name="R4" disabled="" type="radio">
+                                    <label class="disabled" for="R4B">Inactif visible</label>
+                                </div>
+                                <div class="radio-inline">
+                                    <input id="R4C" name="R4" class="radio-hide" disabled="" type="radio">
+                                    <label class="disabled" for="R4C">Inactif invisible</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Choix sur plusieurs lignes</legend>
+                            <div class="reponse">
+                                <div class="row radio">
+                                    <input id="R5A" name="R5" type="radio">
+                                    <label for="R5A">Radio bouton actif</label>
+                                </div>
+                                <div class="row radio">
+                                    <input id="R5D" name="R5" type="radio">
+                                    <label for="R5D">Radio bouton actif aussi</label>
+                                </div>
+                                <div class="row radio">
+                                    <input id="R5B" name="R5" disabled="" type="radio">
+                                    <label class="disabled" for="R5B">Radio bouton inactif visible</label>
+                                </div>
+                                <div class="row radio">
+                                    <input id="R5C" name="R5" class="radio-hide" disabled="" type="radio">
+                                    <label class="disabled" for="R5B">Radio bouton inactif invisible</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple avec une longue description sur option</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question requis jsRequis control-label">Confirmation avec une longue description </legend>
+                            <div class="reponse">
+                                <div class="row radio radio-multiline-label">
+                                    <input name="R8" id="R8A" type="radio">
+                                    <label for="R8A">
+                                        Sélectionnez cette option pour confirmer qu’étant une personne dûment autorisée à signer des documents au nom de l’employeur, vous transmettrez un des documents suivants : la procuration, le règlement ou la résolution faisant foi de l’autorité du signataire en la matière.
+                                    </label>
+                                </div>
+                                <div class="row radio radio-multiline-label">
+                                    <input name="R8" id="R8B" type="radio">
+                                    <label for="R8B">
+                                        Sélectionnez cette option pour confirmer qu’étant une personne non autorisée à signer des documents au nom de l’employeur, vous ne transmettrez pas les documents suivants : la procuration, le règlement ou la résolution faisant foi de l’autorité du signataire en la matière.
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form role="form" class="form-horizontal">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Appellations contrôlées</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question requis control-label jsRequis">Titre de civilité <span class="sr-only">Obligatoire</span></legend>
+                            <div class="reponse radio">
+                                <input id="radio6A" name="radio6" type="radio">
+                                <label for="radio6A">Madame</label>
+                                <input id="radio6B" name="radio6" type="radio">
+                                <label for="radio6B">Monsieur</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question requis control-label jsRequis">Sexe <span class="sr-only">Obligatoire</span></legend>
+                            <div class="reponse radio">
+                                <input id="radio7A" name="radio7" type="radio">
+                                <label for="radio7A">Féminin</label>
+                                <input id="radio7B" name="radio7" type="radio">
+                                <label for="radio7B">Masculin</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

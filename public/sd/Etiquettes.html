@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Étiquettes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Étiquettes</h1>
+        <p class="requis sans-recul">
+            <span class="sr-only">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+        </p>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple d'étiquettes</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question requis jsRequis control-label" for="rep1">Étiquette pour un champ requis</label>
+                        <div class="reponse">
+                            <input id="rep1" class="form-control length2" maxlength="2" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="rep2">Étiquette pour un champ</label>
+                        <div class="reponse">
+                            <input id="rep2" class="form-control length20" maxlength="20" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple d'étiquette et réponse en consultation (non modifiable)</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question control-label" for="rep3">Étiquette de consultation</label>
+                        <div class="reponse">
+                            <input id="rep3" class="form-control length20" maxlength="20" value="texte de la réponse" readonly="" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

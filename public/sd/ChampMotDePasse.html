@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Champ de saisie de type "Mot de passe"</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Champ de saisie de type "Mot de passe"</h1>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Champ disponible de type Mot de passe</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question control-label" for="tb1">Code secret</label>
+                        <div class="reponse">
+                            <div class="form-inline">
+                                <input id="tb1" class="form-control" maxlength="3" aria-describedby="aideCode" type="password">
+                                <span id="aideCode" class="text-muted">3 derniers chiffres du numéro d'assurance sociale</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="tb2">Mot de passe</label>
+                        <div class="reponse form-inline">
+                            <input id="tb2" class="form-control" maxlength="10" type="password">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

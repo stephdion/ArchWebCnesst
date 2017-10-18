@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Champ de saisie de type "Montant $"</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.js" crossorigin="anonymous"></script>
+    <script src="Scripts/jquery.validate.unobtrusive.csst.js"></script>
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Champ de saisie de type "Montant $"</h1>
+        <p class="requis sans-recul">
+            <span class="sr-only">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+        </p>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Champ disponible de type Montant $</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label question requis jsRequis" for="MontantEntier" id="LabelMontantEntier">Un champ monétaire entier </label>
+                        <div class="reponse">
+                            <div class="form-inline">
+                                <div class="input-group">
+                                    <input aria-describedby="PrecisionMontantEntier PrecisionMontantEntierHorsEcran" autocomplete="off" class="length5 form-control" data-val="true" data-val-number="Le champ Un champ monétaire entier doit être un nombre." data-val-required="Le champ Un champ monétaire entier est requis." id="MontantEntier" maxlength="5" name="MontantEntier" value="" type="text">
+                                    <span class="input-group-addon">,00 $</span>
+                                </div>
+                                <span id="PrecisionMontantEntier" class="text-muted">5 chiffres</span>
+                                <span id="PrecisionMontantEntierHorsEcran" class="sr-only">Montant sans décimal ni symbole monétaire</span>
+                            </div>
+                            <span class="field-validation-valid" data-valmsg-for="MontantEntier" data-valmsg-replace="true"></span>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label question" for="MontantDecimal" id="LabelMontantDecimal">Un champ monétaire avec décimales</label>
+                        <div class="reponse">
+                            <div class="form-inline">
+                                <div class="input-group">
+                                    <input aria-describedby="PrecisionMontantDecimal PrecisionMontantHorsEcran" autocomplete="off" class="form-control" data-val="true" data-val-number="Le champ Un champ monétaire avec décimales doit être un nombre." id="MontantDecimal" maxlength="16" name="MontantDecimal" value="" type="text">
+                                    <span class="input-group-addon">$</span>
+                                </div>
+                                <span id="PrecisionMontantDecimal" class="text-muted">12 chiffres incluant 2 décimales</span>
+                                <span id="PrecisionMontantHorsEcran" class="sr-only">Montant sans symbole monétaire</span>
+                            </div>
+                            <span class="field-validation-valid" data-valmsg-for="MontantDecimal" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Champ non disponible de type Montant $</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label question" for="MontantRemboursement">Remboursement réclamé</label>
+                        <div class="reponse">
+                            <div class="input-group">
+                                <input aria-describedby="SymboleMonetaire" class="form-control length10" id="MontantRemboursement" name="MontantRemboursement" readonly="readonly" value="2&nbsp;458,76" type="text">
+                                <span id="SymboleMonetaire" class="input-group-addon">$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
+</body>
+</html>

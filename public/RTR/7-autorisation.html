@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>CNESST</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<!-- <link rel="stylesheet" href="/cnesst/js/bootstrap-reboot.min.css"> -->
+	<link rel="stylesheet" href="/cnesst/js/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/styleguide.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
+	<link rel="stylesheet" type="text/css" href="/cnesst/js/jquery.qtip.min.css">
+</head>
+<body>
+	<header class="container header-v1">
+		<div class="row no-gutters">
+			<div class="col-auto">
+				<figure class="logo">
+					<img src="../../images/logo.png">
+				</figure>
+			</div>
+		    <div class="col align-self-end">
+		    	<nav class="top-menu">
+		    		<ul>
+		    			<li>
+			    			<a href="#">
+			    				<img src="../../images/icone-cnesst-icone-fleche-retour.png">
+			    				<p>Retour à Mon espace travailleur</p>
+			    			</a>
+		    			</li>
+		    			<li>
+			    			<a href="#">
+			    				<img src="../../images/icone-cnesst-icone-connexion.png">
+			    				<p>Me déconnecter</p>
+			    			</a>
+		    			</li>
+		    		</ul>
+		    	</nav>
+		    </div>
+		</div>
+		<div class="no-menu">
+			<h1>Réclamation du travailleur</h1>
+		</div>
+	</header>
+
+	<section class="container">
+
+		<ul class="nav nav-wizard">
+			<li class="completed"><a href="#"><i>1</i></a></li>
+			<li class="completed"><a href="#"><i>2</i></a></li>
+			<li class="completed"><a href="#"><i>3</i></a></li>
+			<li class="completed"><a href="#"><i>4</i></a></li>
+			<li class="completed"><a href="#"><i>5</i></a></li>
+			<li class="completed"><a href="#"><i>6</i></a></li>
+			<li class="active"><a href="#"><i>7</i><span>Renseignements relatifs à votre état de santé</span></a></li>
+			<li><a href="#"><i>8</i></a></li>
+		</ul>
+
+		<div class="strong">
+			<div class="mcl2">
+
+				<div class="step-info">
+					<p class="number">6</p>
+					<h2>Renseignements relatifs à votre état de santé</h2>
+				</div>
+
+				<div class="form-cont sp-xl">
+
+					<div class="content">
+
+						<div class="box2">
+							<h4>Autorisation</h4>
+							<div class="text">
+
+								<label>J'autorise :</label>
+
+								<ul class="bullets1">
+									<li>tout médecin, professionnel ou intervenant de la santé</li>
+									<li>tout établissement de la santé et des services sociaux</li>
+									<li>toute clinique</li>
+									<li>à communiquer les renseignements relatifs à mon état de santé concernant le traitement de ma réclamation à la Commission des normes, de l'équité, de la santé et de la sécurité du travail (CNESST).</li>
+								</ul>
+					
+								<label class="radiobutton">
+								   <input type="checkbox" name="mode" value="create">
+								   <i><strong>En cochant cette case,  je donne mon autorisation.</strong></i>
+								</label>
+
+							</div>
+						</div>
+
+
+					</div>	
+					<div class="btns">
+						<a class="btn btn7" href="6-depot-direct.html">Pr&eacute;c&eacute;dent</a>
+						<a class="btn btn3" href="8-resume.html">Suivant</a>
+					</div>
+				</div>
+
+				<div class="btns">
+					<a class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+					<a class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="container footer">
+		<div class="row no-gutters">
+			<div class="col">
+				<ul class="footer-menu">
+					<li><a href="#">Accessibilit&eacute;</a></li>
+					<li><a href="#">Politique de confidentialit&eacute;</a></li>
+					<li><a href="#">Plan du site</a></li>
+				</ul>
+			</div>
+			<div class="col right">
+				<span>Renseignements g&eacute;n&eacute;raux : </span>
+				<span><a href="tel:18448380808">1 844 838-0808</a></span>
+				<img src="../../images/logo_footer.png">
+			</div>
+		</div>
+		<div class="row no-gutters bottom">
+			&copy; CNESST, 2017
+		</div>
+
+	</footer>
+
+
+
+
+
+	<script src="/cnesst/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/locales/bootstrap-datepicker.fr.min.js"></script>
+	<script src="/cnesst/js/jquery.qtip.min.js"></script>
+
+	<script>
+		$( function() {
+			$( ".datepicker" ).datepicker({
+				format: "yyyy-mm-dd",
+    			language: 'fr'
+			});
+		});
+
+
+		$(document).ready(function() {
+		    $(".amount").keydown(function (e) {
+		        // Allow: backspace, delete, tab, escape, enter and .
+		        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+		             // Allow: Ctrl/cmd+A
+		            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+		             // Allow: Ctrl/cmd+C
+		            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+		             // Allow: Ctrl/cmd+X
+		            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+		             // Allow: home, end, left, right
+		            (e.keyCode >= 35 && e.keyCode <= 39)) {
+		                 // let it happen, don't do anything
+		                 return;
+		        }
+		        // Ensure that it is a number and stop the keypress
+		        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+		            e.preventDefault();
+		        }
+		    });
+
+
+		    $('[title!=""]').qtip({
+		    	content: {
+		    		button: true
+		    	},
+			    show: {
+			        event: 'click',
+
+			    },
+			    hide: {
+			        event: 'click'
+			    }
+		    });
+
+			$('.hasTooltip').each(function() { // Notice the .each() loop, discussed below
+			    $(this).qtip({
+			    	content: {
+			    		button: true,
+			            text: $(this).next('div').html() // Use the "div" element next to this for the content
+			    	},
+				    show: {
+				        event: 'click',
+
+				    },
+				    hide: {
+				        event: 'click'
+				    }
+			    });
+			});	
+
+
+		    $('[data-hide!=""]').on('click', function(event) {
+		    	$($(this).data('hide')).addClass('hide');
+
+		    	// $($(this).data('hide')).find('input[type="radio"]').prop('checked', false);
+		    	$($(this).data('hide')).each(function(index, el) {
+		    		// $(el).find('input[type="radio"]').eq(0).trigger('click');
+		    		$(el).find('input[type="radio"]').prop('checked', false);
+		    	});
+		    });
+
+		    $('[data-show!=""]').on('click', function(event) {
+		    	$($(this).data('show')).removeClass('hide');
+		    });
+
+		    $('[data-characters!=""]').keyup(function(){
+			        var text = $(this).val();
+			        var maxlength = $(this).data('characters');
+
+			        if(maxlength > 0)  
+			        {
+			                $(this).val(text.substr(0, maxlength)); 
+			        }
+			});
+
+		});
+	</script>
+
+</body>
+</html>

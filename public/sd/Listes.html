@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Listes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Listes</h1>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 id="titreForm7">Liste d'items avec ligne cliquable</h2>
+            </div>
+            <div class="panel-body">
+
+                <div role="region" aria-labelledby="titreForm7">
+                    <nav class="right" aria-label="Nombre de résultats à afficher dans le tableau">
+                        <div class="btn-group pagination nbr_par_page">
+                            <button type="button" id="btnGroupe10" class="btn btn-default active" aria-pressed="true">10</button>
+                            <button type="button" id="btnGroupe20" class="btn btn-default" aria-pressed="false">20</button>
+                            <button type="button" id="btnGroupe50" class="btn btn-default" aria-pressed="false">50</button>
+                            <button type="button" id="btnGroupeTous" class="btn btn-default" aria-pressed="false">Tous</button>
+                        </div>
+                    </nav>
+
+                    <div class="table-responsive">
+                        <div class="hide" id="idDaTrier"> Trier la colonne </div>
+                        <div class="hide" id="idDaInverserTri"> Inverser le tri </div>
+                        <div class="hide" id="idDaAcceder"> Accédez au document pour plus de détails </div>
+                        <table class="table table-striped table-hover table-bordered">
+                            <thead class="clickable">
+                                <tr>
+                                    <th id="TB7_L0C1" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaTrier">
+                                            Numéro
+                                        </button>
+                                    </th>
+                                    <th id="TB7_L0C2" class="col-xs-2" aria-sort="ascending">
+                                        <button type="button" class="active" aria-describedby="idDaInverserTri">
+                                            Nom
+                                            <i aria-hidden="true" class="glyphicon glyphicon-chevron-up pull-right"></i>
+                                        </button>
+                                    </th>
+                                    <th id="TB7_L0C3" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaTrier">
+                                            Prénom
+                                        </button>
+                                    </th>
+                                    <th id="TB7_L01C4" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaTrier">
+                                            Lieu * avec title *
+                                        </button>
+
+                                    </th>
+                                    <th id="TB7_L0C5" class="col-xs-3">
+                                        <button type="button" aria-describedby="idDaTrier">
+                                            Raison
+                                        </button>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="TB7_L1C1">
+                                        <a href="#" id="TB7_L1C1_L" aria-describedby="idDaAcceder" aria-labelledby="TB7_L1C1_L TB7_L1C2 TB7_L1C3 TB7_L1C4 TB7_L1C5">                                            
+                                            1002
+                                        </a>
+                                    </td>
+                                    <td id="TB7_L1C2">
+                                        Grivois
+                                    </td>
+                                    <td id="TB7_L1C3">
+                                        Benoît
+                                    </td>
+                                    <td id="TB7_L1C4">
+                                        Praesent scelerisque
+                                    </td>
+                                    <td id="TB7_L1C5">
+                                        Faucibus eros eget faucibus
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="TB7_L2C1">
+                                        <a href="#" id="TB7_L2C1_L" aria-describedby="idDaAcceder" aria-labelledby="TB7_L2C1_L TB7_L2C2 TB7_L2C3 TB7_L2C4 TB7_L2C5">
+                                            1003
+                                        </a>
+                                    </td>
+                                    <td id="TB7_L2C2">
+                                        Laboissonnière
+                                    </td>
+                                    <td id="TB7_L2C3">
+                                        Jesper
+                                    </td>
+                                    <td id="TB7_L2C4">
+                                        Fusce sagittis
+                                    </td>
+                                    <td id="TB7_L2C5">
+                                        Malesuada massa. Aliquam velit lectus, laoreet
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="TB7_L3C1">
+                                        <a href="#" id="TB7_L3C1_L" aria-describedby="idDaAcceder" aria-labelledby="TB7_L3C1_L TB7_L3C2 TB7_L3C3 TB7_L3C4 TB7_L3C5">
+                                            1001
+                                        </a>
+                                    </td>
+                                    <td id="TB7_L3C2">
+                                        Lambert
+                                    </td>
+                                    <td id="TB7_L3C3">
+                                        Tabor
+                                    </td>
+                                    <td id="TB7_L3C4">
+                                        Curabitur sodales
+                                    </td>
+                                    <td id="TB7_L3C5">
+                                        Hendrerit erat, id tincidunt lacus ornare eget
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="TB7_L4C1">
+                                        <a href="#" id="TB7_L4C1_L" aria-describedby="idDaAcceder" aria-labelledby="TB7_L4C1_L TB7_L4C2 TB7_L4C3 TB7_L4C4 TB7_L4C5">
+                                            1004
+                                        </a>
+                                    </td>
+                                    <td id="TB7_L4C2">
+                                        Vadeboncoeur
+                                    </td>
+                                    <td id="TB7_L4C3">
+                                        Cheney
+                                    </td>
+                                    <td id="TB7_L4C4">
+                                        Venenatis accumsan
+                                    </td>
+                                    <td id="TB7_L4C5">
+                                        Porttitor sed mauris. Class aptent taciti sociosqu ad litora
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <span id="labelPagination" class="hide">Parcourir le tableau de résultats</span>
+
+                    <nav class="text-center" aria-labelledby="labelPagination">
+                        <div class="btn-group pagination">
+                            <button class="btn btn-default" aria-label="Page précédente" disabled="">
+                                <span aria-hidden="true">«</span>
+                            </button>
+                            <button class="btn btn-default active" aria-label="Page 1 active">
+                                1
+                            </button>
+                            <button class="btn btn-default " aria-label="Page 2 ">
+                                2
+                            </button>
+                            <button class="btn btn-default " aria-label="Page 3 ">
+                                3
+                            </button>
+                            <button class="btn btn-default " aria-label="Page 4 ">
+                                4
+                            </button>
+                            <button class="btn btn-default" aria-label="Prochaine page">
+
+                                <span aria-hidden="true">»</span>
+                            </button>
+                        </div>
+                    </nav>
+                </div> <!-- region -->
+            </div> <!-- panel-body-->
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 id="titreForm2">Liste vide</h2>
+            </div>
+            <div class="panel-body">
+                <div role="region" aria-labelledby="titreForm2">
+                    <div class="table-responsive">
+                        <div class="hide" id="idDaTrier"> Trier la colonne </div>
+                        <div class="hide" id="idDaInverserTri"> Inverser le tri </div>
+                        <table class="table table-striped table-hover table-bordered">
+                            <thead class="clickable">
+                                <tr>
+                                    <th id="TB2_L0C1" class="col-xs-1 disabled">
+                                        <span class="sr-only">Item sélectionné</span>
+                                    </th>
+                                    <th id="TB2_L0C2" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaTrier" disabled="">
+                                            Numéro
+                                        </button>
+                                    </th>
+                                    <th id="TB2_L0C3" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaInverserTri" disabled="">
+                                            Nom
+                                        </button>
+                                    </th>
+                                    <th id="TB2_L0C4" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaTrier" disabled="">
+                                            Prénom
+                                        </button>
+                                    </th>
+                                    <th id="TB2_L01C5" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaTrier" disabled="">
+                                            Lieu * avec title *
+                                        </button>
+
+                                    </th>
+                                    <th id="TB2_L0C6" class="col-xs-3">
+                                        <button type="button" aria-describedby="idDaTrier" disabled="">
+                                            Raison
+                                        </button>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6">
+                                        <div class="alert" tabindex="0" aria-describedby="titreForm2">
+                                            <i class="glyphicon glyphicon-info-sign text-info"></i>
+                                            <span class="sr-only">Information</span>
+                                            <span>La liste est vide.</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> <!-- region -->
+            </div> <!-- panel-body-->
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 id="titreForm3">Liste - Trop d'occurrences sont retournées</h2>
+            </div>
+            <div class="panel-body">
+
+                <div role="region" aria-labelledby="titreForm3">
+                    <div class="table-responsive">
+                        <div class="hide" id="idDaTrier"> Trier la colonne </div>
+                        <div class="hide" id="idDaInverserTri"> Inverser le tri </div>
+                        <table class="table table-striped table-hover table-bordered">
+                            <thead class="clickable">
+                                <tr>
+                                    <th id="TB3_L0C1" class="col-xs-1 disabled">
+                                        <span class="sr-only">Item sélectionné</span>
+                                    </th>
+                                    <th id="TB3_L0C2" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaTrier" disabled="">
+                                            Numéro
+                                        </button>
+                                    </th>
+                                    <th id="TB3_L0C3" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaInverserTri" disabled="">
+                                            Nom
+                                        </button>
+                                    </th>
+                                    <th id="TB3_L0C4" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaTrier" disabled="">
+                                            Prénom
+                                        </button>
+                                    </th>
+                                    <th id="TB3_L01C5" class="col-xs-2">
+                                        <button type="button" aria-describedby="idDaTrier" disabled="">
+                                            Lieu * avec title *
+                                        </button>
+
+                                    </th>
+                                    <th id="TB3_L0C6" class="col-xs-3">
+                                        <button type="button" aria-describedby="idDaTrier" disabled="">
+                                            Raison
+                                        </button>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6">
+                                        <div class="alert" tabindex="0" aria-describedby="titreForm3">
+                                            <i class="glyphicon glyphicon-exclamation-sign text-warning" aria-hidden="true"></i>
+                                            <span class="sr-only">Attention</span>
+                                            <span>Le nombre de formulaires correspondants aux critères de sélection dépasse la limite fixée. Veuillez raffiner les critères de sélection.</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> <!-- region -->
+            </div><!-- panel-body-->
+        </div>
+
+    </div>
+</body>
+</html>

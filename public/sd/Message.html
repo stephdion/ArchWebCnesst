@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Messages fonctionnels</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="Scripts/Jquery-ui-cnesst.js"></script>
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Messages fonctionnels</h1>
+
+            <section class="alert alert-success alert-non-dismissible" aria-label="Confirmation" aria-describedby="msgConfirmation1" tabindex="-1">
+                <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                <span class="alert-message" id="msgConfirmation1">Message de confirmation</span>
+            </section>
+
+            <section class="alert alert-success alert-dismissible" aria-label="Confirmation">
+                <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                <button id="btnFermerConfirmation" type="button" class="close" data-dismiss="alert" aria-label="Ne plus afficher ce message" aria-labelledby="msgConfirmation2 btnFermerConfirmation">×</button>
+                <span class="alert-message" id="msgConfirmation2">Message de confirmation pouvant être fermé</span>
+            </section>
+        
+            <section class="alert alert-info alert-non-dismissible" aria-label="Information" aria-describedby="msgInfo1" tabindex="-1">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <span id="msgInfo1">Message d'information</span>
+            </section>
+
+            <section class="alert alert-info alert-dismissible" aria-label="Information">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <button id="btnFermerInfo" type="button" class="close" data-dismiss="alert" aria-label="Ne plus afficher ce message" aria-labelledby="msgInfo2 btnFermerInfo">×</button>
+                <span class="alert-message" id="msgInfo2">Message d'information pouvant être fermer</span>
+            </section>
+
+            <section class="alert alert-warning alert-non-dismissible" aria-label="Attention" aria-describedby="msgAlerte1" id="idAlerte2" tabindex="-1">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span id="msgAlerte1">Message d'avertissement</span>
+            </section>
+
+            <section class="alert alert-warning alert-dismissible" aria-label="Attention">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <button id="btnFermerAvertissement" type="button" class="close" data-dismiss="alert" aria-label="Ne plus afficher ce message" aria-labelledby="msgAlerte2 btnFermerAvertissement">×</button>
+                <span class="alert-message" id="msgAlerte2">Message d'avertissement pouvant être fermé</span>
+            </section>
+
+            <section class="alert alert-danger alert-non-dismissible" aria-label="Erreur" aria-describedby="msgErreur1" tabindex="-1">
+                <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+                <span class="alert-message" id="msgErreur1">Message d'erreur</span>
+            </section>
+
+            <section class="alert alert-danger alert-dismissible" aria-label="Erreur">
+                <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+                <button id="btnFermerErreur" type="button" class="close" data-dismiss="alert" aria-label="Ne plus afficher ce message" aria-labelledby="msgErreur2 btnFermerErreur">×</button>
+                <span class="alert-message" id="msgErreur2">Message d'erreur pouvant être fermé</span>
+            </section>
+        </div>
+</body>
+</html>

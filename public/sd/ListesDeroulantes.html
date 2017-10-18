@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Listes déroulantes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Listes déroulantes</h1>
+        <p class="requis sans-recul">
+            <span class="sr-only">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+        </p>
+
+        <form class="form-horizontal" role="form" method="post">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Listes déroulantes disponibles</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question requis jsRequis control-label" for="Sel1">Liste déroulante adaptative 1ère option vide</label>
+                        <div class="reponse">
+                            <select class="form-control" id="Sel1" name="Sel1Value">
+                                <option value="valeurNull" id="Sel1Opt0" label=" " selected=""></option>
+                                <option value="valeur 1" id="Sel1Opt1">Select 1 Option 1</option>
+                                <option value="valeur 2" id="Sel1Opt2">Select 1 Option 2</option>
+                                <option value="valeur 3" id="Sel1Opt3">Select 1 Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question requis jsRequis control-label" for="Sel2">Liste déroulante avec valeur par défaut</label>
+                        <div class="reponse">
+                            <select class="form-control length20" id="Sel2">
+                                <option value="valeurNull" id="Sel2Opt0" label=" "></option>
+                                <option value="valeur 1" id="Sel2Opt1">Select 2 Option 1</option>
+                                <option value="valeur 2" id="Sel2Opt2">Select 2 Option 2</option>
+                                <option value="valeur 3" id="Sel2Opt3" selected="selected">Select 2 Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Liste déroulante non disponible</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel3">Liste déroulante adaptative 1ère option vide</label>
+                        <div class="reponse">
+                            <select class="form-control" id="Sel3" disabled="">
+                                <option value="valeurNull" label=" " id="Sel3Opt0"></option>
+                                <option value="valeur 1" id="Sel3Opt1">Select 3 Option 1</option>
+                                <option value="valeur 2" id="Sel3Opt2">Select 3 Option 2</option>
+                                <option value="valeur 3" id="Sel3Opt3">Select 3 Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel4">Liste déroulante avec valeur par défaut</label>
+                        <div class="reponse">
+                            <select class="form-control length20" id="Sel4" disabled="">
+                                <option value="valeurNull" label=" " id="Sel4Opt0"></option>
+                                <option value="valeur 1" id="Sel4Opt1">Select 4 Option 1</option>
+                                <option value="valeur 2" id="Sel4Opt2">Select 4 Option 2</option>
+                                <option value="valeur 3" id="Sel4Opt3" selected="selected">Select 4 Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Appellations contrôlées</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel5">Formulaires</label>
+                        <div class="reponse">
+                            <select class="form-control length10" id="Sel5">
+                                <option value="En cours" id="Sel5Opt1">En cours</option>
+                                <option value="Traités" id="Sel5Opt2">Traités</option>
+                                <option value="Tous" id="Sel5Opt3">Tous</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel6">Nom du fichier</label>
+                        <div class="reponse">
+                            <select class="form-control length30" id="Sel6">
+                                <option value="Choisir un fichier" id="Sel6Opt1">Choisir un fichier</option>
+                                <option value="Fichier 1" id="Sel6Opt2">Fichier 1</option>
+                                <option value="Fichier 2" id="Sel6Opt3">Fichier 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel7">Établissement</label>
+                        <div class="reponse">
+                            <select class="form-control" id="Sel7">
+                                <option value="" id="Sel7Opt0" label=" "></option>
+                                <option value="Adresse 1" id="Sel7Opt1">Adresse 1</option>
+                                <option value="Adresse 2" id="Sel7Opt2">Adresse 2</option>
+                                <option value="Adresse 3" id="Sel7Opt3">Adresse 3</option>
+                                <option value="Adresse 4" id="Sel7Opt4">Adresse 4</option>
+                                <option value="Adresse 5" id="Sel7Opt5">Adresse 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel8">Numéro de l'établissement</label>
+                        <div class="reponse">
+                            <select class="form-control length10" id="Sel8">
+                                <option value="" id="Sel8Opt0" label=" "></option>
+                                <option value="000008574" id="Sel8Opt1">000008574</option>
+                                <option value="601054518" id="Sel8Opt2">601054518</option>
+                                <option value="602842443" id="Sel8Opt3">602842443</option>
+                                <option value="000008583" id="Sel8Opt4">000008583</option>
+                                <option value="600796586" id="Sel8Opt5">600796586</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question requis jsRequis control-label" for="Sel9">Numéro de l'établissement <span class="sr-only">Obligatoire</span></label>
+                        <div class="reponse">
+                            <select class="form-control" id="Sel9">
+                                <option value="Tous" id="Sel9Opt1">Tous</option>
+                                <option value="CLUB L'AGE D'OR DE ST-AIME-DES-LACS INC TEST (74574528)" id="Sel9Opt2">CLUB L'AGE D'OR DE ST-AIME-DES-LACS INC TEST (74574528)</option>
+                                <option value="Grp Ress Log Colt Gaspesie Iles Msdeleine TEST (71046659)" id="Sel9Opt3">Grp Ress Log Colt Gaspesie Iles Msdeleine TEST (71046659)</option>
+                                <option value="Konstantinos Triantopoulos TEST (76208206)" id="Sel9Opt4">Konstantinos Triantopoulos TEST (76208206)</option>
+                                <option value="Magasin le travailleur sportif inc TEST (015678A5)" id="Sel9Opt5">Magasin le travailleur sportif inc TEST (015678A5)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

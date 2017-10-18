@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cases à cocher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cases à cocher</h1>
+        <p class="requis sans-recul">
+            <span class="sr-only">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+        </p>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple de cases à cocher disponibles</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question requis jsRequis control-label">Items requis sur la même ligne </legend>
+                            <div class="reponse checkbox">
+                                <div class="checkbox-inline">
+                                    <input id="cba1" value="item1" type="checkbox">
+                                    <label for="cba1">Item 1</label>
+                                </div>
+                                <div class="checkbox-inline">
+                                    <input id="cba2" value="item2" type="checkbox">
+                                    <label for="cba2">Item 2</label>
+                                </div>
+                                <div class="checkbox-inline">
+                                    <input id="cba3" value="item3" type="checkbox">
+                                    <label for="cba3">Item 3</label>
+                                </div>
+
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Distance adaptative entre les items</legend>
+                            <div class="reponse checkbox">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <input id="cbb1" value="item1" type="checkbox">
+                                        <label for="cbb1">Item 1</label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <input id="cbb2" value="item2" type="checkbox">
+                                        <label for="cbb2">Item 2</label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <input id="cbb3" value="item3" type="checkbox">
+                                        <label for="cbb3">Item 3</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Items sur plusieurs lignes</legend>
+                            <div class="reponse">
+                                <div class="row checkbox">
+                                    <input id="cbc1" value="item1" type="checkbox">
+                                    <label for="cbc1">Item 1</label>
+                                </div>
+                                <div class="row checkbox">
+                                    <input id="cbc2" value="item2" type="checkbox">
+                                    <label for="cbc2">Item 2</label>
+                                </div>
+                                <div class="row checkbox">
+                                    <input id="cbc3" value="item3" type="checkbox">
+                                    <label for="cbc3">Item 3</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Sur deux lignes avec une zone de texte</legend>
+                            <div class="reponse">
+                                <div class="row checkbox">
+                                    <input id="cbd1" value="item1" type="checkbox">
+                                    <label for="cbd1">Item 1</label>
+                                </div>
+                                <div class="row checkbox">
+                                    <input id="cbd2" value="item2" type="checkbox">
+                                    <label id="cdb21" for="cbd2">Item 2</label>
+                                    <label id="p11" for="p1">préciser</label>
+                                    <input id="p1" aria-labelledby="p11 cdb21" type="text" disabled>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Sur deux lignes et deux colonnes</legend>
+                            <div class="reponse">
+                                <div class="row checkbox">
+                                    <div class="checkbox-inline">
+                                        <input id="cbe1" type="checkbox">
+                                        <label for="cbe1">Item 1</label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <input id="cbe2" type="checkbox">
+                                        <label for="cbe2">Item 3</label>
+                                    </div>
+
+                                </div>
+                                <div class="row checkbox">
+                                    <div class="checkbox-inline">
+                                        <input id="cbe3" type="checkbox">
+                                        <label for="cbe3">Item 2</label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <input id="cbe4" type="checkbox">
+                                        <label id="cbe41" for="cbe4">Item 4</label>
+                                        <br>
+                                        <input id="p4" aria-labelledby="p41 cbe41" type="text" disabled>
+                                        <label id="p41" for="p4">préciser</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple de cases à cocher non disponibles</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Sur une ligne</legend>
+                            <div class="reponse checkbox">
+                                <div class="checkbox-inline">
+                                    <input id="cbf1" value="item1" type="checkbox">
+                                    <label for="cbf1" class="checkbox-inline">Case à cocher active</label>
+                                </div>
+                                <div class="checkbox-inline">
+                                    <input id="cbf2" disabled="" type="checkbox">
+                                    <label for="cbf2" class="checkbox-inline disabled">Case à cocher inactive visible</label>
+                                </div>
+                                <div class="checkbox-inline">
+                                    <input id="cbf3" class="checkbox-hide" disabled="" type="checkbox">
+                                    <label for="cbf3" class="checkbox-inline disabled">Case à cocher inactive invisible</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Sur trois lignes</legend>
+                            <div class="reponse">
+                                <div class="row checkbox">
+                                    <input id="cbg1" type="checkbox">
+                                    <label for="cbg1">Case à cocher active</label>
+                                </div>
+                                <div class="row checkbox disabled">
+                                    <input id="cbg2" disabled="" type="checkbox">
+                                    <label for="cbg2">Case à cocher inactive visible</label>
+                                </div>
+                                <div class="row checkbox disabled">
+                                    <input id="cbg3" class="checkbox-hide" disabled="" type="checkbox">
+                                    <label for="cbg3">Case à cocher inactive invisible</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Autres exemples</h2>
+                </div>
+                <div class="panel-body">
+                    <h3>Exemple de confirmation</h3>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Confirmation avec une longue description</legend>
+                            <div class="reponse">
+                                <div class="checkbox checkbox-multiline-label">
+                                    <input id="cbh1" type="checkbox">
+                                    <label for="cbh1">
+                                        Cochez cette case pour confirmer qu’étant une personne dûment autorisée à signer des documents au nom de l’employeur, vous transmettrez un des documents suivants : la procuration, le règlement ou la résolution faisant foi de l’autorité du signataire en la matière.
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <h3>Exemple d'autorisation obligatoire</h3>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend id="lgText" class="jsRequis"><span class="sr-only">Exemple d'autorisation obligatoire</span> </legend>
+                            <div class="reponse requis sans-libelle">
+                                <div class="checkbox checkbox-multiline-label">
+                                    <input id="cbh2" type="checkbox">
+                                    <label for="cbh2">
+                                        J'autorise la commission des normes de l'équité de la santé et de la sécurité du travail à consectetur adipiscing elit. Nullam vehicula nisi nec nulla scelerisque accumsan. Mauris diam enim, pharetra laoreet fringilla eget, lacinia eget neque. Cras molestie facilisis urna, non tempus felis luctus semper. Duis condimentum, metus in sodales rhoncus, metus ante tincidunt metus, vitae luctus dui augue id neque
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#cbe4').click(function () {
+                $('#p4').attr('disabled', !this.checked)
+            });
+
+            $('#cbd2').click(function () {
+                $('#p1').attr('disabled', !this.checked)
+            });
+        });
+    </script>
+
+</body>
+</html>

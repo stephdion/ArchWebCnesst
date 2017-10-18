@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Champ de saisie de type "Texte"</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Champ de saisie de type "Texte"</h1>
+        <p class="requis sans-recul">
+            <span class="sr-only">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+        </p>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple de champs de type « Texte » disponibles</h2>
+                </div>
+                <div class="panel-body">
+                    <h3>Sous-titre de la section</h3>
+                    <div class="form-group">
+                        <label class="control-label question requis jsRequis" for="tb1">Un champ texte court requis </label>
+                        <div class="reponse">
+                            <input id="tb1" class="form-control length2" maxlength="2" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="tb2">Un champ texte largeur fixe</label>
+                        <div class="reponse">
+                            <input id="tb2" class="form-control length40" maxlength="40" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="tb3">Un champ texte long adaptatif</label>
+                        <div class="reponse">
+                            <input id="tb3" class="form-control maxLength" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question requis jsRequis control-label" for="tb4">Un champ texte multilignes adaptatif </label>
+                        <div class="reponse">
+                            <textarea id="tb4" class="form-control resizable" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-inline form-group" role="group">
+                        <fieldset>
+                            <legend class="question control-label">Deux boîtes d'édition dans la réponse</legend>
+                            <div class="reponse">
+                                <input id="tb5a" class="form-control length4" type="text">
+                                <label for="tb5a" class="aide_saisie">Lorem</label>
+                                <input id="tb5b" class="form-control length4" type="text">
+                                <label for="tb5b" class="aide_saisie">Ipsum</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple de champ de type « Texte » non disponible</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question control-label" for="tb7">Un champ en affichage seulement</label>
+                        <div class="reponse">
+                            <input id="tb7" class="form-control length20" readonly="readonly" value="Texte en lecture seule" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="tb8">Un champ texte largeur fixe vide</label>
+                        <div class="reponse">
+                            <input id="tb8" class="form-control length40" maxlength="40" readonly="readonly" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="tb9">Un champ text long adaptatif</label>
+                        <div class="reponse">
+                            <input id="tb9" class="form-control" value="Champ texte non disponnible" readonly="readonly" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="tb10">Un champ texte multilignes adaptatif</label>
+                        <div class="reponse">
+                            <textarea id="tb10" class="form-control resizable" rows="6" readonly="readonly">Champ texte multilignes non disponnible</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Appellations contrôlées</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question control-label" for="tb11">Nom de famille</label>
+                        <div class="reponse">
+                            <input id="tb11" class="form-control length40" maxlength="40" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="tb12">Prénom</label>
+                        <div class="reponse">
+                            <input id="tb12" class="form-control length40" maxlength="40" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="tb13">Nom légal de l'employeur</label>
+                        <div class="reponse">
+                            <textarea id="tb13" class="form-control resizable" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <label class="question control-label" for="tb14">Nom de l'établissement</label>
+                        </div>
+                        <div class="reponse">
+                            <textarea id="tb14" class="form-control resizable" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label requis jsRequis" for="tb15">Nom du dossier d'expérience <span class="sr-only">Obligatoire</span></label>
+                        <div class="reponse">
+                            <textarea id="tb15" class="form-control resizable" rows="1"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
