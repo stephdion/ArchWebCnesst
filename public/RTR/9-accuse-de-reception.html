@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="fr">
 <head>
-	<title>CNESST</title>
+	<title>Accusé de réception - Réclamation du travailleur - CNESST</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<!-- <link rel="stylesheet" href="/cnesst/js/bootstrap-reboot.min.css"> -->
 	<link rel="stylesheet" href="/cnesst/js/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">
+	<!-- <link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">-->
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.css">
+  <link rel="stylesheet" type="text/css" href="/cnesst/css/components2.css">
 	<link rel="stylesheet" type="text/css" href="/cnesst/css/styleguide.css">
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
 	<link rel="stylesheet" type="text/css" href="/cnesst/js/jquery.qtip.min.css">
+<link rel="stylesheet" type="text/css" href="/cnesst/css/cnesst.css">
 </head>
 <body>
 
-	<header class="container header-v1">
+	<header class="container header-v1" aria-labelledby="naHeader">
+    <a id="skip" href="#content">Passer la navigation. Accéder directement au contenu</a>
 		<div class="row no-gutters">
 			<div class="col-auto">
-				<figure class="logo">
-					<img src="../../images/logo.png">
-				</figure>
+				<div class="logo">
+					<img src="../../images/logo.png" alt="C N E S S T">
+				</div>
 			</div>
 			<div class="col-auto align-self-end">
 				<p class="subtitle">Mon espace <strong>travailleur</strong></p>
@@ -29,13 +33,13 @@
 		    		<ul>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-utilisateur.png">
+			    				<img alt="" src="../../images/icone-cnesst-icone-utilisateur.png">
 			    				<p>Mon profil</p>
 			    			</a>
 		    			</li>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-deconnexion.png">
+			    				<img alt="" src="../../images/icone-cnesst-icone-deconnexion.png">
 			    				<p>Me d&eacute;connecter</p>
 			    			</a>
 		    			</li>
@@ -47,31 +51,31 @@
 			<ul>
 				<li class="active">
 					<a href="#">
-						<img src="../../images/icone-cnesst-icone-services-en-ligne.png">
+						<img alt="" src="../../images/icone-cnesst-icone-services-en-ligne.png">
 						<p>Services in ligne</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="../../images/icone-cnesst-icone-mon-dossier.png">
+						<img alt="" src="../../images/icone-cnesst-icone-mon-dossier.png">
 						<p>Mon dossier</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="../../images/icone-cnesst-icone-mes-documents.png">
+						<img alt="" src="../../images/icone-cnesst-icone-mes-documents.png">
 						<p>Mes documents</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="../../images/icone-cnesst-icone-mes-depots.png">
+						<img alt="" src="../../images/icone-cnesst-icone-mes-depots.png">
 						<p>Mes d&eacute;p&ocirc;ts directs</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="../../images/icone-cnesst-icone-messagerie.png">
+						<img alt="" src="../../images/icone-cnesst-icone-messagerie.png">
 						<p>Ma messagerie</p>
 						<p class="number">12</p>
 					</a>
@@ -80,9 +84,9 @@
 		</nav>
 	</header>
 
-	<section class="container">
+	<main class="container" id="content">
 		<header class="mcl">
-			<h2 class="main-title">Accusé de réception</h2>
+			<h1 class="main-title"><span class="h1">Accusé de réception<span></h1>
 		</header>
 		<div class="strong">
 			<div class="mcl">
@@ -90,7 +94,7 @@
 
 					<div class="mt1">
 						<i class="icon-check"></i>
-						<h3>L'évolution de votre situation médicale a été transmise avec succès.</h3>
+						<h2>L'évolution de votre situation médicale a été transmise avec succès.</h2>
 
 						<div class="fw-block">
 							Votre numéro de référence est le <strong>ESM348216733.</strong>
@@ -121,21 +125,35 @@
 
 			</div>
 		</div>
-	</section>
+	</main>
 
 	<footer class="container footer">
 		<div class="row no-gutters">
 			<div class="col">
 				<ul class="footer-menu">
-					<li><a href="#">Accessibilit&eacute;</a></li>
-					<li><a href="#">Politique de confidentialit&eacute;</a></li>
-					<li><a href="#">Plan du site</a></li>
+					<li><a href="#" target="_blank">Accessibilit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Politique de confidentialit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Plan du site
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
 				</ul>
 			</div>
 			<div class="col right">
-				<span>Renseignements g&eacute;n&eacute;raux : </span>
-				<span><a href="tel:18448380808">1 844 838-0808</a></span>
-				<img src="../../images/logo_footer.png">
+				<p>
+          <span>Renseignements g&eacute;n&eacute;raux : </span>
+          <span><a href="tel:18448380808" aria-label="Téléphone Renseignements généraux 1 844 838-0808">1&nbsp;844&nbsp;838-0808</a></span>
+        </p>
+				<img alt="C N E S S T" src="../../images/logo_footer.png">
 			</div>
 		</div>
 		<div class="row no-gutters bottom">
@@ -211,7 +229,7 @@
 				        event: 'click'
 				    }
 			    });
-			});	
+			});
 
 
 		    $('[data-hide!=""]').on('click', function(event) {
@@ -232,9 +250,9 @@
 			        var text = $(this).val();
 			        var maxlength = $(this).data('characters');
 
-			        if(maxlength > 0)  
+			        if(maxlength > 0)
 			        {
-			                $(this).val(text.substr(0, maxlength)); 
+			                $(this).val(text.substr(0, maxlength));
 			        }
 			});
 

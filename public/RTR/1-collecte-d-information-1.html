@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="fr">
 <head>
-	<title>CNESST</title>
+	<title>Étape 1 Collecte d'information (1 de 2) - Réclamation du travailleur - CNESST</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<!-- <link rel="stylesheet" href="/cnesst/js/bootstrap-reboot.min.css"> -->
 	<link rel="stylesheet" href="/cnesst/js/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">
+	<!-- <link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">-->
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.css">
+  <link rel="stylesheet" type="text/css" href="/cnesst/css/components2.css">
 	<link rel="stylesheet" type="text/css" href="/cnesst/css/styleguide.css">
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
 	<link rel="stylesheet" type="text/css" href="/cnesst/js/jquery.qtip.min.css">
+<link rel="stylesheet" type="text/css" href="/cnesst/css/cnesst.css">
 </head>
 <body>
-	<header class="container header-v1">
+	<header class="container header-v1" aria-labelledby="naHeader">
+    <a id="skip" href="#content">Passer la navigation. Accéder directement au contenu</a>
 		<div class="row no-gutters">
 			<div class="col-auto">
-				<figure class="logo">
-					<img src="../../images/logo.png">
-				</figure>
+				<div class="logo">
+					<img src="../../images/logo.png" alt="C N E S S T">
+				</div>
 			</div>
 		    <div class="col align-self-end">
 		    	<nav class="top-menu">
 		    		<ul>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-fleche-retour.png">
-			    				<p>Retour à Mon espace travailleur</p>
+			    				<img alt="" src="../../images/icone-cnesst-icone-fleche-retour.png">
+			    				<span>Retour à Mon espace travailleur</span>
 			    			</a>
 		    			</li>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-connexion.png">
-			    				<p>Me déconnecter</p>
+			    				<img alt="" src="../../images/icone-cnesst-icone-connexion.png">
+			    				<span>Me déconnecter</span>
 			    			</a>
 		    			</li>
 		    		</ul>
@@ -40,29 +44,29 @@
 		    </div>
 		</div>
 		<div class="no-menu">
-			<h1>Réclamation du travailleur</h1>
+			<span id="naHeader">Réclamation du travailleur</span>
 		</div>
 	</header>
 
-	<section class="container">
+	<main class="container" id="content">
 
 		<ul class="nav nav-wizard">
-			<li class="active"><a href="#"><i>1</i><span>Collecte d'information</span></a></li>
+			<li class="active first-child"><a href="#"><i>1</i><span>Collecte d'information</span></a></li>
 			<li><a href="#"><i>2</i></a></li>
 			<li><a href="#"><i>3</i></a></li>
 			<li><a href="#"><i>4</i></a></li>
 			<li><a href="#"><i>5</i></a></li>
 			<li><a href="#"><i>6</i></a></li>
 			<li><a href="#"><i>7</i></a></li>
-			<li><a href="#"><i>8</i></a></li>
+			<li class="last-child"><a href="#"><i>8</i></a></li>
 		</ul>
 
 		<div class="strong">
 			<div class="mcl2">
 
 				<div class="step-info">
-					<p class="number">1</p>
-					<h2>Collecte d'information (1 de 2)</h2>
+
+					<h1><span class="number">1</span><span class="h1"><span class="h1">Collecte d'information (1 de 2)<span></h1>
 				</div>
 
 				<div class="infobox5 sp-xl">
@@ -83,7 +87,7 @@
 								   <i>Est-ce que l'événement est lié à un accident du travail ou à une maladie professionnelle déjà déclarée?</i>
 
 								   <div class="radiobuttons">
-									   	
+
 										<label class="radiobutton">
 										   <input data-hide="#option-2" data-show="#option-1" type="radio" name="mode" value="oui">
 										   <i>Oui</i>
@@ -93,7 +97,7 @@
 										   <input data-hide="#option-1" data-show="#option-2" type="radio" name="mode" value="non">
 										   <i>Non</i>
 										</label>
-										
+
 								   </div>
 								</label>
 							</div>
@@ -101,7 +105,7 @@
 
 
 						<div id="option-1" class="hide box2 sp-s">
-							<h4>Événement</h4>
+							<h3>Événement</h3>
 							<div class="text">
 
 								<div class="control-group">
@@ -112,7 +116,7 @@
 									</div>
 									<p class="clarification">aaaa-mm-jj</p>
 								</div>
-						   
+
 								<div class="control-group">
 									<label><span class="rft">*</span> Date à laquelle la lésion professionnelle a été déclarée la première fois </label>
 									<div class="date-icon">
@@ -126,13 +130,13 @@
 									<input type="text" name="montant" data-characters="9">
 									<p class="clarification">9 chiffres</p>
 								</div>
-												
+
 							</div>
 						</div>
 
 
 						<div id="option-2" class="hide box2 sp-s">
-							<h4>Événement</h4>
+							<h3>Événement</h3>
 							<div class="text">
 
 								<div class="control-group">
@@ -149,7 +153,7 @@
 
 
 						<div class="box2 sp-s">
-							<h4>Numéro d'identification</h4>
+							<h3>Numéro d'identification</h3>
 							<div class="text">
 
 								<div class="control-group">
@@ -168,10 +172,10 @@
 						</div>
 
 
-					</div>	
+					</div>
 					<div class="btns">
-						<a class="btn btn7" href="0-avant-de-debuter.html">Pr&eacute;c&eacute;dent</a>
-						<a class="btn btn3" href="1-collecte-d-information-2.html">Suivant</a>
+						<a role="button" class="btn btn7" href="0-avant-de-debuter.html">Pr&eacute;c&eacute;dent</a>
+						<a role="button" class="btn btn3" href="1-collecte-d-information-2.html">Suivant</a>
 					</div>
 				</div>
 
@@ -179,21 +183,35 @@
 			</div>
 		</div>
 
-	</section>
+	</main>
 
 	<footer class="container footer">
 		<div class="row no-gutters">
 			<div class="col">
 				<ul class="footer-menu">
-					<li><a href="#">Accessibilit&eacute;</a></li>
-					<li><a href="#">Politique de confidentialit&eacute;</a></li>
-					<li><a href="#">Plan du site</a></li>
+					<li><a href="#" target="_blank">Accessibilit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Politique de confidentialit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Plan du site
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
 				</ul>
 			</div>
 			<div class="col right">
-				<span>Renseignements g&eacute;n&eacute;raux : </span>
-				<span><a href="tel:18448380808">1 844 838-0808</a></span>
-				<img src="../../images/logo_footer.png">
+				<p>
+          <span>Renseignements g&eacute;n&eacute;raux : </span>
+          <span><a href="tel:18448380808" aria-label="Téléphone Renseignements généraux 1 844 838-0808">1&nbsp;844&nbsp;838-0808</a></span>
+        </p>
+				<img alt="C N E S S T" src="../../images/logo_footer.png">
 			</div>
 		</div>
 		<div class="row no-gutters bottom">
@@ -269,7 +287,7 @@
 				        event: 'click'
 				    }
 			    });
-			});	
+			});
 
 
 		    $('[data-hide!=""]').on('click', function(event) {
@@ -290,9 +308,9 @@
 			        var text = $(this).val();
 			        var maxlength = $(this).data('characters');
 
-			        if(maxlength > 0)  
+			        if(maxlength > 0)
 			        {
-			                $(this).val(text.substr(0, maxlength)); 
+			                $(this).val(text.substr(0, maxlength));
 			        }
 			});
 

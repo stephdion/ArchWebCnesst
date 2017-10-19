@@ -1,0 +1,55 @@
+body{
+	background: #fafafa;
+}
+.component{
+	background: #ffffff;
+	margin: 50px 0;
+	padding: 30px 0;
+	border-top: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+}
+.component:hover{
+	border-top: 1px dashed #999;
+	border-bottom: 1px dashed #999;
+}
+
+
+
+.folder-content{
+	width: 100%;
+	text-align: center;
+	padding: 10rem 1rem;
+}
+.folder-content h3{
+	color: #111;
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+.folder-content img{
+	display: block;
+	margin: 0 auto 2rem auto;
+	max-width: 154px;
+}
+
+.folder-list{
+	width: 100%;
+	max-width: 400px;
+	display: inline-block;
+	text-align: center;
+}
+.folder-list li{
+	display: block;
+	line-height: 1.5rem;
+}
+.folder-list li a{
+	display: block;
+	padding: 1.5rem;
+	margin: 0.3rem;
+	background: #eee;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+}
+.folder-list li a:hover{
+	background: #ddd;
+}

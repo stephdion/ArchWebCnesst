@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="fr">
 <head>
-	<title>CNESST</title>
+	<title>Avant de débuter - Réclamation du travailleur - CNESST</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<!-- <link rel="stylesheet" href="/cnesst/js/bootstrap-reboot.min.css"> -->
 	<link rel="stylesheet" href="/cnesst/js/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">
+	<!-- <link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">-->
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.css">
+  <link rel="stylesheet" type="text/css" href="/cnesst/css/components2.css">
 	<link rel="stylesheet" type="text/css" href="/cnesst/css/styleguide.css">
-
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
-	<link rel="stylesheet" type="text/css" href="/cnesst/js/jquery.qtip.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/cnesst.css">
 </head>
 <body>
-	<header class="container header-v1">
+	<header class="container header-v1" aria-labelledby="naHeader">
+    <a id="skip" href="#content">Passer la navigation. Accéder directement au contenu</a>
 		<div class="row no-gutters">
 			<div class="col-auto">
-				<figure class="logo">
-					<img src="../../images/logo.png">
-				</figure>
+				<div class="logo">
+					<img src="../../images/logo.png" alt="C N E S S T">
+				</div>
 			</div>
 		    <div class="col align-self-end">
 		    	<nav class="top-menu">
 		    		<ul>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-fleche-retour.png">
-			    				<p>Retour à Mon espace travailleur</p>
+			    				<img alt="" src="../../images/icone-cnesst-icone-fleche-retour.png">
+			    				<span>Retour à Mon espace travailleur</span>
 			    			</a>
 		    			</li>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-connexion.png">
-			    				<p>Me déconnecter</p>
+			    				<img alt="" src="../../images/icone-cnesst-icone-connexion.png">
+			    				<span>Me déconnecter</span>
 			    			</a>
 		    			</li>
 		    		</ul>
@@ -40,13 +43,13 @@
 		    </div>
 		</div>
 		<div class="no-menu">
-			<h1>Réclamation du travailleur</h1>
+			<span id="naHeader">Réclamation du travailleur</span>
 		</div>
 	</header>
 
-	<section class="container">
+	<main class="container" id="content">
 		<header class="mcl">
-			<h2 class="main-title">Avant de débuter</h2>
+			<h1 class="main-title">Avant de débuter</h1>
 		</header>
 		<div class="strong">
 			<div class="mcl">
@@ -55,28 +58,29 @@
 						<div class="box">
 							<div class="title-w-icon">
 								<i class="icon icon-timer"></i>
-								<h3>Votre demande compte <strong>9 étapes</strong> et dure <strong>15 minutes.</strong></h3>
-							</div>	
+								<h2>Votre demande compte <strong>9 étapes</strong> et dure <strong>15 minutes.</strong></h2>
+							</div>
 							<div class="w-padd2">
 								<div class="text">
 									<p>Vous devez remplir le formulaire Réclamation du travailleur, si vous vous absentez pour plus de 14 jours ou si vous avez des frais à vous faire rembourser.</p>
-									<p>Vous aurez besoin des informations suivantes pour compléter votre formulaire :</p>
-								</div>		
-								<h4 class="style1">Besoin d'aide</h4>	
-								<div class="text">
-									<p>Vous pouvez obtenir de l'aide à tout moment en cliquant sur l'icône. <a href="#" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat ni."><i class="icon-help"></i></a></p>	
 
-								</div>	
+								</div>
+								<h3 class="style1">Besoin d'aide</h3>
+						<div class="text">
+									<p>Vous pouvez obtenir de l'aide à tout moment en cliquant sur l'icône. <a href="#" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat ni."><i class="icon-help"></i></a></p>
+
+								</div>
 							</div>
-						</div> 
+						</div>
 					</div>
 					<div class="cl">
 						<div class="w-padd">
 
 							<div class="list1">
+								<h2 class="hors-ecran">Ce dont vous aurez besoin</h2>
 							<div class="text">
 									<p>Vous aurez besoin des informations suivantes pour compléter votre formulaire :</p>
-								</div>	
+								</div>
 								<h3>Renseignements sur vous</h3>
 								<ul>
 									<li>Numéro d'assurance maladie (NAM)</li>
@@ -91,33 +95,47 @@
 								<ul>
 									<li>Coordonnées de votre employeur</li>
 								</ul>
-							</div>					
-						</div> 
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="btns">
-					<a class="btn btn3" href="1-collecte-d-information-1.html">Suivant</a>
+					<a role="button" class="btn btn3" href="1-collecte-d-information-1.html">Suivant</a>
 				</div>
 
 
 			</div>
 		</div>
-	</section>
+	</main>
 
 	<footer class="container footer">
 		<div class="row no-gutters">
 			<div class="col">
 				<ul class="footer-menu">
-					<li><a href="#">Accessibilit&eacute;</a></li>
-					<li><a href="#">Politique de confidentialit&eacute;</a></li>
-					<li><a href="#">Plan du site</a></li>
+					<li><a href="#" target="_blank">Accessibilit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Politique de confidentialit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Plan du site
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
 				</ul>
 			</div>
 			<div class="col right">
-				<span>Renseignements g&eacute;n&eacute;raux : </span>
-				<span><a href="tel:18448380808">1 844 838-0808</a></span>
-				<img src="../../images/logo_footer.png">
+				<p>
+          <span>Renseignements g&eacute;n&eacute;raux : </span>
+          <span><a href="tel:18448380808" aria-label="Téléphone Renseignements généraux 1 844 838-0808">1&nbsp;844&nbsp;838-0808</a></span>
+        </p>
+				<img alt="C N E S S T" src="../../images/logo_footer.png">
 			</div>
 		</div>
 		<div class="row no-gutters bottom">
@@ -193,7 +211,7 @@
 				        event: 'click'
 				    }
 			    });
-			});	
+			});
 
 
 		    $('[data-hide!=""]').on('click', function(event) {
@@ -214,9 +232,9 @@
 			        var text = $(this).val();
 			        var maxlength = $(this).data('characters');
 
-			        if(maxlength > 0)  
+			        if(maxlength > 0)
 			        {
-			                $(this).val(text.substr(0, maxlength)); 
+			                $(this).val(text.substr(0, maxlength));
 			        }
 			});
 

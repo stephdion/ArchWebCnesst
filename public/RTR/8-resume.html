@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="fr">
 <head>
-	<title>CNESST</title>
+		<title>Étape 8 - Résumé avant transmission - Réclamation du travailleur - CNESST</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<!-- <link rel="stylesheet" href="/cnesst/js/bootstrap-reboot.min.css"> -->
 	<link rel="stylesheet" href="/cnesst/js/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">
+	<!-- <link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">-->
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.css">
+  <link rel="stylesheet" type="text/css" href="/cnesst/css/components2.css">
 	<link rel="stylesheet" type="text/css" href="/cnesst/css/styleguide.css">
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
 	<link rel="stylesheet" type="text/css" href="/cnesst/js/jquery.qtip.min.css">
+<link rel="stylesheet" type="text/css" href="/cnesst/css/cnesst.css">
 </head>
 <body>
-	<header class="container header-v1">
+	<header class="container header-v1" aria-labelledby="naHeader">
+    <a id="skip" href="#content">Passer la navigation. Accéder directement au contenu</a>
 		<div class="row no-gutters">
 			<div class="col-auto">
-				<figure class="logo">
-					<img src="../../images/logo.png">
-				</figure>
+				<div class="logo">
+					<img src="../../images/logo.png" alt="C N E S S T">
+				</div>
 			</div>
 		    <div class="col align-self-end">
 		    	<nav class="top-menu">
 		    		<ul>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-fleche-retour.png">
-			    				<p>Retour à Mon espace travailleur</p>
+			    				<img alt="" src="../../images/icone-cnesst-icone-fleche-retour.png">
+			    				<span>Retour à Mon espace travailleur</span>
 			    			</a>
 		    			</li>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-connexion.png">
-			    				<p>Me déconnecter</p>
+			    				<img alt="" src="../../images/icone-cnesst-icone-connexion.png">
+			    				<span>Me déconnecter</span>
 			    			</a>
 		    			</li>
 		    		</ul>
@@ -40,29 +44,29 @@
 		    </div>
 		</div>
 		<div class="no-menu">
-			<h1>Réclamation du travailleur</h1>
+			<span id="naHeader">Réclamation du travailleur</span>
 		</div>
 	</header>
 
-	<section class="container">
+	<main class="container" id="content">
 
 		<ul class="nav nav-wizard">
-			<li class="completed"><a href="#"><i>1</i></a></li>
+			<li class="completed first-child-completed"><a href="#"><i>1</i></a></li>
 			<li class="completed"><a href="#"><i>2</i></a></li>
 			<li class="completed"><a href="#"><i>3</i></a></li>
 			<li class="completed"><a href="#"><i>4</i></a></li>
 			<li class="completed"><a href="#"><i>5</i></a></li>
 			<li class="completed"><a href="#"><i>6</i></a></li>
 			<li class="completed"><a href="#"><i>7</i></a></li>
-			<li class="active"><a href="#"><i>8</i><span>R&eacute;sum&eacute;</span></a></li>
+			<li class="active last-child"><a href="#"><i>8</i><span>R&eacute;sum&eacute;</span></a></li>
 		</ul>
 
 
 		<div class="strong">
 			<div class="mcl2">
 			<div class="step-info">
-				<p class="number">6</p>
-				<h2>R&eacute;sum&eacute;</h2>
+
+				<h1><span class="number">8</span><span class="h1">R&eacute;sum&eacute;<span></h1>
 				<hr>
 				<div class="text">
 					<p>V&eacute;rifiez les renseignements qui seront transmise &agrave; la CNESST.</p>
@@ -72,11 +76,11 @@
 				<div class="form-cont">
 					<div class="header">
 						<a href="#" class="edit">Modifier</a>
-						<h3>Identification</h3>
+						<h2>Identification</h2>
 					</div>
 					<div class="content">
 						<div class="box2">
-							<h4>Renseignements sur vous</h4>
+							<h3>Renseignements sur vous</h3>
 							<div class="text">
 								<p><strong>Pr&eacute;nom,nom :</strong> Monsieur Fabien Bertrand</p>
 								<br>
@@ -87,7 +91,7 @@
 						</div>
 						<br>
 						<div class="box2">
-							<h4>Lorem ipsum dolor sit amet</h4>
+							<h3>Lorem ipsum dolor sit amet</h3>
 							<div class="text">
 								<p><strong>Lorem ipsum:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor.</p>
@@ -105,26 +109,40 @@
 				</div>
 				<div class="btns2">
 					<p class="clarification">En cliquant sur <strong>transmettre</strong>, vous certifiez que les renseignements sont exacts.</p>
-					<a class="btn btn7" href="7-autorisation.html">Pr&eacute;c&eacute;dent</a>
-					<a class="btn btn4" href="#">Transmettre</a>
+					<a role="button" class="btn btn7" href="7-autorisation.html">Pr&eacute;c&eacute;dent</a>
+					<a role="button" class="btn btn4" href="9-accuse-de-reception.html">Transmettre</a>
 				</div>
 			</div>
 		</div>
-	</section>
+	</main>
 
 	<footer class="container footer">
 		<div class="row no-gutters">
 			<div class="col">
 				<ul class="footer-menu">
-					<li><a href="#">Accessibilit&eacute;</a></li>
-					<li><a href="#">Politique de confidentialit&eacute;</a></li>
-					<li><a href="#">Plan du site</a></li>
+					<li><a href="#" target="_blank">Accessibilit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Politique de confidentialit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Plan du site
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
 				</ul>
 			</div>
 			<div class="col right">
-				<span>Renseignements g&eacute;n&eacute;raux : </span>
-				<span><a href="tel:18448380808">1 844 838-0808</a></span>
-				<img src="../../images/logo_footer.png">
+				<p>
+          <span>Renseignements g&eacute;n&eacute;raux : </span>
+          <span><a href="tel:18448380808" aria-label="Téléphone Renseignements généraux 1 844 838-0808">1&nbsp;844&nbsp;838-0808</a></span>
+        </p>
+				<img alt="C N E S S T" src="../../images/logo_footer.png">
 			</div>
 		</div>
 		<div class="row no-gutters bottom">
@@ -200,7 +218,7 @@
 				        event: 'click'
 				    }
 			    });
-			});	
+			});
 
 
 		    $('[data-hide!=""]').on('click', function(event) {
@@ -221,9 +239,9 @@
 			        var text = $(this).val();
 			        var maxlength = $(this).data('characters');
 
-			        if(maxlength > 0)  
+			        if(maxlength > 0)
 			        {
-			                $(this).val(text.substr(0, maxlength)); 
+			                $(this).val(text.substr(0, maxlength));
 			        }
 			});
 

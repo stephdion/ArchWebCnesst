@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="fr">
 <head>
-	<title>CNESST</title>
+		<title>Étape 4 - Arrêt et retour au travail - Réclamation du travailleur - CNESST</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<!-- <link rel="stylesheet" href="/cnesst/js/bootstrap-reboot.min.css"> -->
 	<link rel="stylesheet" href="/cnesst/js/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">
+	<!-- <link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">-->
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.css">
+  <link rel="stylesheet" type="text/css" href="/cnesst/css/components2.css">
 	<link rel="stylesheet" type="text/css" href="/cnesst/css/styleguide.css">
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
 	<link rel="stylesheet" type="text/css" href="/cnesst/js/jquery.qtip.min.css">
+<link rel="stylesheet" type="text/css" href="/cnesst/css/cnesst.css">
 </head>
 <body>
-	<header class="container header-v1">
+	<header class="container header-v1" aria-labelledby="naHeader">
+    <a id="skip" href="#content">Passer la navigation. Accéder directement au contenu</a>
 		<div class="row no-gutters">
 			<div class="col-auto">
-				<figure class="logo">
-					<img src="../../images/logo.png">
-				</figure>
+				<div class="logo">
+					<img src="../../images/logo.png" alt="C N E S S T">
+				</div>
 			</div>
 		    <div class="col align-self-end">
 		    	<nav class="top-menu">
 		    		<ul>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-fleche-retour.png">
-			    				<p>Retour à Mon espace travailleur</p>
+			    				<img alt="" src="../../images/icone-cnesst-icone-fleche-retour.png">
+			    				<span>Retour à Mon espace travailleur</span>
 			    			</a>
 		    			</li>
 		    			<li>
 			    			<a href="#">
-			    				<img src="../../images/icone-cnesst-icone-connexion.png">
-			    				<p>Me déconnecter</p>
+			    				<img alt="" src="../../images/icone-cnesst-icone-connexion.png">
+			    				<span>Me déconnecter</span>
 			    			</a>
 		    			</li>
 		    		</ul>
@@ -40,29 +44,29 @@
 		    </div>
 		</div>
 		<div class="no-menu">
-			<h1>Réclamation du travailleur</h1>
+			<span id="naHeader">Réclamation du travailleur</span>
 		</div>
 	</header>
 
-	<section class="container">
+	<main class="container" id="content">
 
 		<ul class="nav nav-wizard">
-			<li class="completed"><a href="#"><i>1</i></a></li>
+			<li class="completed first-child-completed"><a href="#"><i>1</i></a></li>
 			<li class="completed"><a href="#"><i>2</i></a></li>
 			<li class="completed"><a href="#"><i>3</i></a></li>
-			<li class="active"><a href="#"><i>4</i><span>Renseignements ​​​​​​​sur l'arrêt et le retour au travail </span></a></li>
+			<li class="active"><a href="#"><i>4</i><span>Arrêt et retour au travail</span></a></li>
 			<li><a href="#"><i>5</i></a></li>
 			<li><a href="#"><i>6</i></a></li>
 			<li><a href="#"><i>7</i></a></li>
-			<li><a href="#"><i>8</i></a></li>
+			<li class="last-child"><a href="#"><i>8</i></a></li>
 		</ul>
 
 		<div class="strong">
 			<div class="mcl2">
 
 				<div class="step-info">
-					<p class="number">4</p>
-					<h2>Renseignements ​​​​​​​sur l'arrêt et le retour au travail </h2>
+
+					<h1><span class="number">4</span><span class="h1">Renseignements ​​​​​​​sur l'arrêt et le retour au travail <span></h1>
 				</div>
 
 				<div class="form-cont sp-xl">
@@ -73,7 +77,7 @@
 						</div>
 
 						<div class="box2">
-							<h4>Arrêt de travail</h4>
+							<h3>Arrêt de travail</h3>
 
 							<div class="text">
 
@@ -81,7 +85,7 @@
 								   <i>Êtes-vous actuellement ou ​​​​​​​avez-vous été en arrêt de travail?</i>
 
 								   <div class="radiobuttons">
-									   	
+
 										<label class="radiobutton">
 										   <input data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
 										   <i>Oui</i>
@@ -91,7 +95,7 @@
 										   <input data-show=".os-1-2" data-hide=".os-1" type="radio" name="mode">
 										   <i>Non</i>
 										</label>
-									
+
 								   </div>
 
 								</label>
@@ -113,7 +117,7 @@
 
 
 						<div class="box2 os-1-1 os-1 hide">
-							<h4>Retour au travail</h4>
+							<h3>Retour au travail</h3>
 
 							<div class="text">
 
@@ -121,7 +125,7 @@
 								   <i>Êtes-vous actuellement de retour au travail?</i>
 
 								   <div class="radiobuttons">
-									   	
+
 										<label class="radiobutton">
 										   <input data-show=".os-2-1" data-hide=".os-2" type="radio" name="mode2">
 										   <i>Oui</i>
@@ -131,7 +135,7 @@
 										   <input data-show=".os-2-2" data-hide=".os-2" type="radio" name="mode2">
 										   <i>Non</i>
 										</label>
-									
+
 								   </div>
 
 								</label>
@@ -161,7 +165,7 @@
 
 
 						<div class="box2 os-2-1 os-1-2 os-1 os-2 hide">
-							<h4>Au travail</h4>
+							<h3>Au travail</h3>
 
 							<div class="text">
 
@@ -170,7 +174,7 @@
 								   <p class="clarification">(Mêmes tâches, même horaire et mêmes conditions.)</p>
 
 								   <div class="radiobuttons">
-									   	
+
 										<label class="radiobutton">
 										   <input data-hide=".os-3" type="radio" name="mode3">
 										   <i>Oui</i>
@@ -180,7 +184,7 @@
 										   <input data-show=".os-3-2" data-hide=".os-3" type="radio" name="mode3">
 										   <i>Non</i>
 										</label>
-									
+
 								   </div>
 
 								</label>
@@ -190,7 +194,7 @@
 								   <i>Précisez votre emploi</i>
 
 								   <div class="radiobuttons">
-									   	
+
 										<label class="radiobutton">
 										   <input data-hide=".os-4" type="radio" name="mode4">
 										   <i>Assignation temporaire ​​​​​​​(temps plein)</i>
@@ -200,27 +204,27 @@
 										   <input data-hide=".os-4" type="radio" name="mode4">
 										   <i>Assignation temporaire(temps partiel)</i>
 										</label>
-									
+
 										<label class="radiobutton">
 										   <input data-hide=".os-4" type="radio" name="mode4">
 										   <i>Travail allégé (temps plein)</i>
 										</label>
-									
+
 										<label class="radiobutton">
 										   <input data-hide=".os-4" type="radio" name="mode4">
 										   <i>Retour progressif</i>
 										</label>
-									
+
 										<label class="radiobutton">
 										   <input data-hide=".os-4" type="radio" name="mode4">
 										   <i>Chez un autre employeur</i>
 										</label>
-									
+
 										<label class="radiobutton">
 										   <input data-show=".os-4-1" data-hide=".os-4" type="radio" name="mode4">
 										   <i>Autre</i>
 										</label>
-									
+
 
 										<div class="control-group os-4-1 os-4 hide">
 											<label><span class="rft">*</span> Précisez </label>
@@ -236,7 +240,7 @@
 								   <i>Est-ce que votre employeur continue à payer votre salaire ​​​​​​​en totalité?</i>
 
 								   <div class="radiobuttons">
-									   	
+
 										<label class="radiobutton">
 										   <input type="radio" name="mode5">
 										   <i>Oui</i>
@@ -251,7 +255,7 @@
 										   <input type="radio" name="mode5">
 										   <i>Je ne sais pas</i>
 										</label>
-									
+
 								   </div>
 
 								</label>
@@ -261,36 +265,50 @@
 							</div>
 						</div>
 
-					</div>	
+					</div>
 					<div class="btns">
-						<a class="btn btn7" href="3-renseignements-evenement.html">Pr&eacute;c&eacute;dent</a>
-						<a class="btn btn3" href="5-renseignements-calcul-versement.html">Suivant</a>
+						<a role="button" class="btn btn7" href="3-renseignements-evenement.html">Pr&eacute;c&eacute;dent</a>
+						<a role="button" class="btn btn3" href="5-renseignements-calcul-versement.html">Suivant</a>
 					</div>
 				</div>
 
 				<div class="btns">
-					<a class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
-					<a class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+					<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+					<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
 				</div>
 
 			</div>
 		</div>
 
-	</section>
+	</main>
 
 	<footer class="container footer">
 		<div class="row no-gutters">
 			<div class="col">
 				<ul class="footer-menu">
-					<li><a href="#">Accessibilit&eacute;</a></li>
-					<li><a href="#">Politique de confidentialit&eacute;</a></li>
-					<li><a href="#">Plan du site</a></li>
+					<li><a href="#" target="_blank">Accessibilit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Politique de confidentialit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Plan du site
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
 				</ul>
 			</div>
 			<div class="col right">
-				<span>Renseignements g&eacute;n&eacute;raux : </span>
-				<span><a href="tel:18448380808">1 844 838-0808</a></span>
-				<img src="../../images/logo_footer.png">
+				<p>
+          <span>Renseignements g&eacute;n&eacute;raux : </span>
+          <span><a href="tel:18448380808" aria-label="Téléphone Renseignements généraux 1 844 838-0808">1&nbsp;844&nbsp;838-0808</a></span>
+        </p>
+				<img alt="C N E S S T" src="../../images/logo_footer.png">
 			</div>
 		</div>
 		<div class="row no-gutters bottom">
@@ -366,7 +384,7 @@
 				        event: 'click'
 				    }
 			    });
-			});	
+			});
 
 
 		    $('[data-hide!=""]').on('click', function(event) {
@@ -387,9 +405,9 @@
 			        var text = $(this).val();
 			        var maxlength = $(this).data('characters');
 
-			        if(maxlength > 0)  
+			        if(maxlength > 0)
 			        {
-			                $(this).val(text.substr(0, maxlength)); 
+			                $(this).val(text.substr(0, maxlength));
 			        }
 			});
 
